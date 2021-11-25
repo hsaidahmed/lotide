@@ -13,7 +13,7 @@ const countOnly = function(allItems, itemsToCount) {
       results[item] += 1;
     } else {
       results[item] = 1;
-      if (itemsToCount[item]) { 
+      if (itemsToCount[item]) {
         if (results[item]) {
           results[item] += 1;
         } else {
@@ -22,9 +22,9 @@ const countOnly = function(allItems, itemsToCount) {
       }
     }
   }
-return results;
+  return results;
 
-}
+};
 const firstNames = [
   "Karl",
   "Salima",
