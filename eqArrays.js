@@ -5,9 +5,9 @@ const assertEqual = function(actual, expected) {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }
 };
-const eqArrays = (array1,array2) => {
+const eqArrays = (array1, array2) => {
   if (array1.length !== array2.length) {
-    console.log(false);
+    // console.log(false);
     return false;
   }
   for (let i = 0; i < array1.length; i++) {
