@@ -29,7 +29,7 @@ const eqArrays = function(array1, array2) {
       
       return false;
     }
-  }
+  } 
   return true;
 };
 
@@ -40,19 +40,19 @@ const assertObjectsEqual = function(actual, expected) {
   console.log(`Example label: ${inspect(actual)}`);
 };
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-//eqObjects(ab, ba); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// //eqObjects(ab, ba); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-//eqObjects(ab, abc); // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// //eqObjects(ab, abc); // => false
 
-assertObjectsEqual(eqObjects(ab, ba), true);
-assertObjectsEqual(eqObjects(ab, abc), false);
+// assertObjectsEqual(eqObjects(ab, ba), true);
+// assertObjectsEqual(eqObjects(ab, abc), false);
 
-const cd = { c: "1", d: ["2", 3] };
-const dc = { d: ["2", 3], c: "1" };
-assertObjectsEqual(eqObjects(cd, dc), true); // => true
+// const cd = { c: "1", d: ["2", 3] };
+// const dc = { d: ["2", 3], c: "1" };
+// assertObjectsEqual(eqObjects(cd, dc), true); // => true
 
-const cd2 = { c: "1", d: ["2", 3, 4] };
-assertObjectsEqual(eqObjects(cd, cd2), false); // => false
+// const cd2 = { c: "1", d: ["2", 3, 4] };
+// assertObjectsEqual(eqObjects(cd, cd2), false); // => false
