@@ -19,3 +19,4 @@ const countLetters = function(string) {
   return result;
 };
 console.log(countLetters("hashim"));
+module.exports = countLetters;

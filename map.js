@@ -29,11 +29,12 @@ const eqArrays = (array1,array2) => {
  
   return true;
 };
-const assertArraysEqual = function(actual, expected) {
-  if (eqArrays(actual, expected)) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]);
+// const assertArraysEqual = function(actual, expected) {
+//   if (eqArrays(actual, expected)) {
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+//   }
+// };
+// assertArraysEqual(results1,[ 'g', 'c', 't', 'm', 't' ]);
+module.exports = map;
