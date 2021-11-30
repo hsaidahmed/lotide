@@ -6,7 +6,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 const tail = function(array) {
-  if (array === '') {
+  if (array.length === '') {
     return undefined;
   }
   const x = array.slice(1);

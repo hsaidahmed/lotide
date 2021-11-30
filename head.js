@@ -9,12 +9,12 @@
 
 
 const assertEqual = require('./assertEqual');
-const head = function(array) {
-  if (array === '') {
+const head = (array) => {
+  if (array.length === 0) {
     return undefined;
   }
-  const x = array[0];
-  //console.log(x);
+  const x = array[0]; 
+  // console.log(x);
   return x;
 };
 module.exports = head;
